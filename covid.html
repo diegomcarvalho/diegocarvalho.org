@@ -1,0 +1,71 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pandemia da COVID-19</title>
+	<link rel="stylesheet" href="style.css">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body id="top">
+	<header>
+		<h1><span class="latex">Pandemia da COVID-19</h1>
+		<p class="author">Diego Carvalho<br>28 de maio de 2020</p>
+	</header>
+
+	<div class="abstract">
+		<h5>Resumo</h5>
+		<p>
+			Nessa página, o de grupo de modelagem computacional do Centro Federal de Educação
+			Tecnologica Celso Suckow da Fonseca apresenta um súmário dos resultados da pesquisa
+			que vem sendo feita sobre a Pandemia da COVID-19. Esses resultados não são definitivos e
+			devem ser considerados com cuidado, pois são fruto de pesquisa ainda em desenvolvimento.
+			O principal objetivo dessa divulgação é compartilhar rapidamente com os nossos pares para
+			validação, sugestões e comentários. Um painel completo com todos os resultados intermediários
+			pode ser encontrado no seguinte <a href="covid/index.html">link</a>.
+		</p>
+	</div>
+	<main>
+		<article>
+			<h2>Pesquisa</h2>
+			<p> Nas seções abaixo são apresentadas tópicos sobre o diário de pesquisa.
+			</p>
+			<h3>Dia 28 de maio de 2020</h3>
+			<p>
+				Continuamos a observar o aumento de casos e percebemos uma enorme dificuldade em identificar o pico do número
+				de casos, pois os modelos, inclusive de outros grupos de pesquisa, não concordam entre si. De maneira geral,
+				continuamos a observar a subida no número de infectados, sem uma definição clara do ponto de infexão da curva,
+				como pode ser observado abaixo na figura que apresenta o resultado do nosso modelo SARS-Cov-2-EDO-BR.
+			</p>
+			<figure>
+				<img src="covid/20200528/Brasil-6.svg" loading="lazy" alt="Casos acumulados Brasil 20200527" width="500" height="500">
+				<figcaption>
+					Casos acumulados no Basil (fonte: Ministério da Saúde) e resultado do modelo SARS-Cov-2-EDO-BR com previsão de 7 dias.
+				</figcaption>
+			</figure>
+			<p>
+				Além disso, ficamos consternados com a decisão da Prefeitura Municipal do Rio de Janeiro em mudar a forma de contagem de óbitos na
+				cidade. Felizmente, na manhã de hoje (28 de maio de 2020), recebemos a notícial que a Defensoria Pública conseguiu que a
+				PMRJ revesse a sua posição.
+			</p>
+			<figure>
+				<img src="covid/20200528/EDO-PARAM.png" loading="lazy" alt="Casos acumulados Brasil 20200527" width="500" height="500">
+				<figcaption>
+					Gráfico com o dD - taxa de mortos induzida pela COVID-19 nos diagnosticados -  oriundo do ajuste do modelo SARS-Cov-2-EDO-BR em 2020-05-27 nos dados dos estados brasileiros. 
+				</figcaption>
+			</figure>
+
+
+		</article>
+	</main>
+	<script>
+		MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']]
+			}
+		};
+	</script>
+</body>
+
+</html>

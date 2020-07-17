@@ -33,6 +33,49 @@
 			<h2>Pesquisa</h2>
 			<p> Nas seções abaixo são apresentadas tópicos sobre o diário de pesquisa.
 			</p>
+			<h3>Dia 17 de julho de 2020</h3>
+			<p>
+				De posse dos dados do Ministério da Saúde com diversos atributos dos pacientes testados com 
+				suspeita de COVID-19, fizemos uma verificação de alguns casos conhecidos para entender como
+				os casos se apresentavam na base. 
+			</p>
+			<p>
+				A verificação foi feita com a comparação de casos conhecidos. Por exemplo, procuramos a data de 
+				nascimento do presidente da república na base e tentamos encontrar algum paciente com diagnóstico
+				positivo através do PCR em alguma data em torno da data real do exame. Nos três primeiros casos que
+				procuramos, nós não encontramos correspondentes.
+			</p>
+			<p>
+				Como a base também apresenta pacientes com teste negativo, fizemos o mesmo procedimento com alguns
+				exames negativos e também não encontramos nenhum deles na base.
+			</p>
+			<p>
+				Mesmo não tendo a expectativa de se encontrar um exame negativo na base, ficamos preocupados com a
+				inexistência dos testes positivos que deveriam pertencer a base de dados do Ministério da Saúde, pois 
+				a notificação é obrigatória.
+			</p>
+			<p>
+				Com esse pano de fundo, fizemos a seguinte pergunta: qual seria a curva de notificação (casos diagnosticados)
+				se levássemos em consideração de óbitos. Ou seja, qual seria a curva de casos acumulados compatível
+				com a curva de óbitos que temos. Essa pergunta se baseia na premissa que por causa da burocracia própria
+				que existe na ocorrência do óbito, a notificação compulsória do óbito passa a ser real.
+			</p>
+			<p>
+				Na figura abaixo, nós apresentamos dados do Ministério da Saúde, onde os óbitos acumulados no 
+				Rio de Janeiro estão marcados em em preto no gráfico) e os casos diagnosticados acumulados em azul. Já
+				a curva laranja mostra a estimativa do casos acumulados diagnosticados que teríamos no RJ quando utilizamos
+				o nosso modelo de EDO. Nessa curva temos um indicativo que chegamos na quantidade de casos que temos hoje 
+				(2020/07/17) há 49 dias e que a escalada de casos foi muito mais rápida do que mostrariam os dados.
+			</p>
+			<figure>
+				<center>
+					<img src="covid/20200717/AJUSTE-MORTES.png" loading="lazy" alt="Casos acumulados Brasil 20200527"
+						width="500" height="500">
+				</center>
+				<figcaption>
+					<b>Figura:</b> Ajuste do modelo SYNDROME EDO SARS-Cov-2-EDO-BR para o número de óbitos acumulados até o dia 16 de julho de 2020.
+				</figcaption>
+			</figure>
 			<h3>Dia 28 de maio de 2020</h3>
 			<p>
 				Continuamos a observar o aumento de casos e percebemos uma enorme dificuldade em identificar o pico do
